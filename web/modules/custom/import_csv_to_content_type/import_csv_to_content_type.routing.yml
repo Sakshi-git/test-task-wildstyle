@@ -1,0 +1,7 @@
+import_data_from_csv.import_data:
+  path: '/admin/structure/import_data/sheet/import'
+  defaults:
+    _title: 'Upload CSV'
+    _form: '\Drupal\import_csv_to_content_type\Form\ImportCsvForm'
+  requirements:
+    _permission: 'Import form'

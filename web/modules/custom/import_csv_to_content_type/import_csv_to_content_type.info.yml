@@ -1,0 +1,4 @@
+name: Import CSV data to content type
+description: Custom module to import the data from CSV file to a existing content type
+core_version_requirement: ^8 || ^9
+type: module
