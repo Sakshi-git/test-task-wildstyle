@@ -1,0 +1,19 @@
+uuid: 6796e3b7-a2a3-4e7f-b796-21fe210f6182
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_phone_number
+    - taxonomy.vocabulary.position
+id: taxonomy_term.position.field_phone_number
+field_name: field_phone_number
+entity_type: taxonomy_term
+bundle: position
+label: 'Phone number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

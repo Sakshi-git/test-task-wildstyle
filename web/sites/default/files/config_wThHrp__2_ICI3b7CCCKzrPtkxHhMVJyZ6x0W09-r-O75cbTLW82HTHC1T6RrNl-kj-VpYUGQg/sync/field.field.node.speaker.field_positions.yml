@@ -1,0 +1,29 @@
+uuid: a9914e2d-8078-4156-b406-9709118645ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_positions
+    - node.type.speaker
+    - taxonomy.vocabulary.position
+id: node.speaker.field_positions
+field_name: field_positions
+entity_type: node
+bundle: speaker
+label: Positions
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      position: position
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

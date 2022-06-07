@@ -1,0 +1,29 @@
+uuid: bad89a87-c169-4a62-ac28-a134518ae42a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_company
+    - node.type.speaker
+    - taxonomy.vocabulary.company
+id: node.speaker.field_company
+field_name: field_company
+entity_type: node
+bundle: speaker
+label: Company
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      company: company
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: tags
+field_type: entity_reference

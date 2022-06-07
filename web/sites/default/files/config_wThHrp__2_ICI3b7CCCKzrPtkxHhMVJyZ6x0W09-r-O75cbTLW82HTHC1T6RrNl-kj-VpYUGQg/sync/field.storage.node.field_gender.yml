@@ -1,0 +1,27 @@
+uuid: 9baf0c06-22ac-406e-8a6d-6e4d42b01af6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_gender
+field_name: field_gender
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'mr}Mr.'
+      label: 'mr}Mr.'
+    -
+      value: mrs
+      label: Mrs.
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

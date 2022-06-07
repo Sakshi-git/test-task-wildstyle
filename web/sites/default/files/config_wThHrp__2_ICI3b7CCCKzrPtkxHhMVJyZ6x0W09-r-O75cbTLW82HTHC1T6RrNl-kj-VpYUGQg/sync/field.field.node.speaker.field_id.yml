@@ -1,0 +1,19 @@
+uuid: 70dc9593-3bbf-419a-9401-308c8b90cbb9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_id
+    - node.type.speaker
+id: node.speaker.field_id
+field_name: field_id
+entity_type: node
+bundle: speaker
+label: Id
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

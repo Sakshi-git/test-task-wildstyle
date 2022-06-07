@@ -1,0 +1,38 @@
+uuid: 3608919c-7e4b-43b0-9db8-202ee4a14e91
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.position.field_email
+    - field.field.taxonomy_term.position.field_phone_number
+    - taxonomy.vocabulary.position
+  module:
+    - text
+id: taxonomy_term.position.default
+targetEntityType: taxonomy_term
+bundle: position
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_email:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_phone_number:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }
