@@ -139,8 +139,8 @@ class ImportCsvForm extends FormBase {
                 $term = \Drupal\taxonomy\Entity\Term::create([
                     'vid' => 'position',
                     'name' => $row[7],
-                    'field_email' => $row[8],
-                    'field_phone_number' => $row[9],
+                    $header[8] => $row[8],
+                    $header[9] => $row[9],
                 ]);
                 $term->save();
                 $ptid = $term->id();
