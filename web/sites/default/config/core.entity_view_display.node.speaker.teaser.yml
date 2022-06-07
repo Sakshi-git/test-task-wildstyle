@@ -1,0 +1,54 @@
+uuid: 93a8881e-13fe-4c6a-b26b-9d715bb3e7b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.speaker.body
+    - field.field.node.speaker.field_assistant
+    - field.field.node.speaker.field_company
+    - field.field.node.speaker.field_first_name
+    - field.field.node.speaker.field_full_name
+    - field.field.node.speaker.field_gender
+    - field.field.node.speaker.field_id
+    - field.field.node.speaker.field_last_name
+    - field.field.node.speaker.field_name_title
+    - field.field.node.speaker.field_photo
+    - field.field.node.speaker.field_positions
+    - field.field.node.speaker.field_slug
+    - field.field.node.speaker.field_team_leader_title
+    - node.type.speaker
+  module:
+    - text
+    - user
+id: node.speaker.teaser
+targetEntityType: node
+bundle: speaker
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_assistant: true
+  field_company: true
+  field_first_name: true
+  field_full_name: true
+  field_gender: true
+  field_id: true
+  field_last_name: true
+  field_name_title: true
+  field_photo: true
+  field_positions: true
+  field_slug: true
+  field_team_leader_title: true

@@ -1,0 +1,24 @@
+uuid: 611ea2dc-c5ae-437b-a3b9-711df483ebd5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.article
+    - node.type.page
+  module:
+    - node
+id: oauth
+label: oauth
+weight: 4
+is_admin: null
+permissions:
+  - 'create article content'
+  - 'create page content'
+  - 'delete any article content'
+  - 'delete any page content'
+  - 'delete own article content'
+  - 'delete own page content'
+  - 'edit any article content'
+  - 'edit any page content'
+  - 'edit own article content'
+  - 'edit own page content'

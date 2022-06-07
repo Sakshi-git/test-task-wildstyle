@@ -1,0 +1,19 @@
+uuid: c59a42fb-9f60-4ad1-839d-14aa9ab0390e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_team_leader_title
+    - node.type.speaker
+id: node.speaker.field_team_leader_title
+field_name: field_team_leader_title
+entity_type: node
+bundle: speaker
+label: 'Team leader title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

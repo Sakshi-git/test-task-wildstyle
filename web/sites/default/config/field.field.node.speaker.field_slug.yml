@@ -1,0 +1,19 @@
+uuid: 8159b2ff-fd5b-4f9e-989f-01a6f6f4a3f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slug
+    - node.type.speaker
+id: node.speaker.field_slug
+field_name: field_slug
+entity_type: node
+bundle: speaker
+label: Slug
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
